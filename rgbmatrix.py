@@ -94,7 +94,7 @@ class Server:
 	def __init__(self):
 		self.sock = socket.socket()
 		self.connections = []
-		self.sock.bind(('192.168.1.7', 8090 ))
+		self.sock.bind(('0.0.0.0', 8080 ))
 		self.sock.listen(0)
 		self.running = True
 	
